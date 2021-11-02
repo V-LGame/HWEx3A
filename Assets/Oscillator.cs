@@ -10,12 +10,11 @@ public class Oscillator : MonoBehaviour
     public readonly double EPS = 0.0001;
 
     [SerializeField]
-        private float rx;
-        private float lx;
-        private float x;
-        private double speed;
-        private bool flag;
-    //private float z;
+        private float rx; //end of right
+        private float lx; //end of left
+        private float x; //first position of x
+        private double speed; //the speed
+        private bool flag; //Indicates the direction of movement
 
 
 
@@ -29,39 +28,32 @@ public class Oscillator : MonoBehaviour
                 
         flag = true;
         speed = 3;
-        //speedl = -5;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-
+        //If need to go right side.
         if (transform.position.x < this.rx && flag) {                               
             transform.Translate(new Vector3(end + ((float)(speed)), 0, 0) * Time.deltaTime);
             transform.Rotate(new Vector3(0, 0, end + ((float)(speed))) * Time.deltaTime);
         } 
-
+        //If it reached the end right side.
         if (transform.position.x >= this.rx)
         {
             flag = false;
-            //speed = 2 * (-speed);
-            //speed = 7;
 
         }
-/*        else if (transform.position.x >= this.x - EPS && transform.position.x <= this.x + EPS)
-        {
-
-            speed = 20;
-        }*/
+        //If need to go left side.
         if (transform.position.x > this.lx && !flag)
         {
             //speed += 0.2;
             transform.Translate(new Vector3(-end - ((float)(speed)), 0, 0) * Time.deltaTime);
             transform.Rotate(new Vector3(0, 0, -end - ((float)(speed))) * Time.deltaTime);
-            //z -= 2;
                            
         }
+        //If it reached the end right side.
         if (transform.position.x <= (this.lx))
         {
                            flag = true;
