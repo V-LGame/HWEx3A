@@ -1,4 +1,4 @@
-# **HWEx3A**
+# **Ex3 A**
 ## **scripts:**
 
 * **[A - Oscillator](https://github.com/V-LGame/HWEx3A/blob/main/Assets/Oscillator.cs)**
@@ -10,7 +10,7 @@
   
   # ***הסבר כללי***
 
-  משחק א' של המטלה השבועים:
+  משחק א' של המטלה השבועית:
  
 **סעיף א':Oscillator**
   
@@ -31,7 +31,7 @@
  
 
   
-  
+  ![](https://github.com/V-LGame/HWEx3A/blob/main/Assets/forReadme.png)
   
 </div>
 
