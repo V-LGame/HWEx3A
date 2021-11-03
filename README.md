@@ -1,6 +1,7 @@
 # **Ex3 A**
 [itch.io link](https://victoku1.itch.io/oscillator-and-parameter-change-exersize)
 
+[![](http://img.youtube.com/vi/4LuyNlkqpBk/0.jpg)](http://www.youtube.com/watch?v=4LuyNlkqpBk "Oscillator and parameter change exersize.")
 ## **scripts:**
 
 * **[A - Oscillator](https://github.com/V-LGame/HWEx3A/blob/main/Assets/Oscillator.cs)**
